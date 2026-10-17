@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>br.com.sebratel</groupId>
-        <artifactId>sebratel-parent</artifactId>
+        <artifactId>sebratel-java-parent</artifactId>
         <version>1.0.0</version>
         <relativePath/>
     </parent>
@@ -15,19 +15,19 @@
     <description>Bibliotecas compartilhadas dos serviços Sebratel (envelope de erro, JWT, cliente Elleven)</description>
 
     <!--
-      O sebratel-parent e o sebratel-build-rules (plugin do Checkstyle) vem do GitHub Packages (privado).
+      O sebratel-java-parent e o sebratel-build-rules (plugin do Checkstyle) vem do GitHub Packages (o Maven exige token `read:packages` até para pacotes públicos).
       Exige <server><id>github</id> no ~/.m2/settings.xml com token read:packages. Ver README.
     -->
     <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/Sebratel/dev_Maven_Parent</url>
+            <url>https://maven.pkg.github.com/Sebratel/dev_Maven_JavaParent</url>
         </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/Sebratel/dev_Maven_Parent</url>
+            <url>https://maven.pkg.github.com/Sebratel/dev_Maven_JavaParent</url>
         </pluginRepository>
     </pluginRepositories>
 
@@ -37,7 +37,7 @@
         <module>common-elleven</module>
     </modules>
 
-    <!-- Publica neste repositorio, e nao no dev_Maven_Parent (que o sebratel-parent aponta por padrao). -->
+    <!-- Publica neste repositorio, e nao no dev_Maven_JavaParent (que o sebratel-java-parent aponta por padrao). -->
     <distributionManagement>
         <repository>
             <id>github</id>

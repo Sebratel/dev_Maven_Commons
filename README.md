@@ -1,7 +1,7 @@
 # dev_Maven_Commons
 
 Bibliotecas Java compartilhadas pelos serviços da Sebratel, publicadas no GitHub Packages
-(`https://maven.pkg.github.com/Sebratel/dev_Maven_Commons`). Herdam de `br.com.sebratel:sebratel-parent`.
+(`https://maven.pkg.github.com/Sebratel/dev_Maven_Commons`). Herdam de `br.com.sebratel:sebratel-java-parent`.
 
 | Artefato | Para quê |
 |---|---|
